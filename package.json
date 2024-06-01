@@ -1,0 +1,21 @@
+{
+  "name": "zoom-asai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "assemblyai": "^4.4.5",
+    "dotenv": "^16.4.5",
+    "fluent-ffmpeg": "^2.1.3",
+    "node-media-server": "^2.7.0"
+  },
+  "devDependencies": {
+    "env-mirror": "^1.1.3"
+  }
+}
