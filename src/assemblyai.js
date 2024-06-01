@@ -1,4 +1,5 @@
 const { AssemblyAI } = require("assemblyai");
+require("dotenv").config();
 
 // Create a new AssemblyAI client
 const client = new AssemblyAI({
@@ -13,5 +14,12 @@ const analyzeAudioWithLeMUR = async (filePath, prompt) => {
     prompt,
   });
 
+  console.log(response);
+
   return response;
 };
+
+analyzeAudioWithLeMUR(
+"./src/recordings/meeting_20240601_230721.mp3",
+  "What are the main points of the meeting?"
+);

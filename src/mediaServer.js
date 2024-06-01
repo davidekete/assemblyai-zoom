@@ -24,4 +24,4 @@ nms.on("prePublish", (id, StreamPath, args) => {
   processAudioStream(StreamPath);
 });
 
-module.exports = nms;
+nms.run();
