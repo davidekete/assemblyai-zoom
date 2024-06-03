@@ -7,5 +7,3 @@ const client = new AssemblyAI({
 });
 
 module.exports = client;
-
-require("./audioAnalysis");
