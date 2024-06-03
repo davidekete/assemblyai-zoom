@@ -6,13 +6,13 @@ function processAudioStream(streamPath) {
   const outputPath = `./src/recordings/meeting_${getFormattedDateTime()}.mp3`;
 
   ffmpeg(inputPath)
-    .outputOptions("-q:a 0") // Set the audio quality
+    .outputOptions("-q:a 0") // Set the audio quality to the highest quality
     .outputOptions("-map a") // Map only the audio streams
     .on("start", (commandLine) => {
       console.log("Spawned FFmpeg with command: " + commandLine);
     })
     .on("progress", (progress) => {
-      console.log("Processing: " + progress.percent + "% done");
+      console.log("Processing: " + progress.timemark + "...");
     })
     .on("error", (err, stdout, stderr) => {
       console.log("An error occurred: " + err.message);
