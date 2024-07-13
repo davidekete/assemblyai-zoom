@@ -8,7 +8,7 @@ const transcribeAudio = async (filePath) => {
   return transcript;
 };
 
-transcribeAudio("src/recordings/meeting_20240603_1717405934474.mp3");
+transcribeAudio("src/recordings/FILE_PATH_TO_AUDIO");
 
 const transcribeAudioWithPIIRedaction = async (filePath) => {
   const transcript = await client.transcripts.transcribe({
