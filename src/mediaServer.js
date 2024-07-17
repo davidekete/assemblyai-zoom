@@ -15,7 +15,6 @@ const config = {
   },
 };
 
-// @ts-ignore
 const nms = new NodeMediaServer(config);
 
 // Listen for the "prePublish" event to start processing the audio stream
